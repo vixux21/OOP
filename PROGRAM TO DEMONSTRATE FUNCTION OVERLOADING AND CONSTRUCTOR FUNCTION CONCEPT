@@ -1,0 +1,54 @@
+public class FunctionOverloading {
+    int num1;
+    int num2;
+    String name;
+   
+    // constructor function with no arguments
+    public FunctionOverloading() {
+        num1 = 0;
+        num2 = 0;
+        name = "";
+    }
+   
+    // constructor function with two arguments
+    public FunctionOverloading(int n1, int n2) {
+        num1 = n1;
+        num2 = n2;
+    }
+   
+    // constructor function with three arguments
+    public FunctionOverloading(int n1, int n2, String nm) {
+        num1 = n1;
+        num2 = n2;
+        name = nm;
+    }
+   
+    // function overloading
+    public int add(int a, int b) {
+        return a + b;
+    }
+   
+    public double add(double a, double b) {
+        return a + b;
+    }
+   
+    public int add(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    public static void main(String[] args) {
+        // function overloading demonstration
+        FunctionOverloading fo = new FunctionOverloading();
+        System.out.println("Overloaded function result 1: " + fo.add(5, 10));
+        System.out.println("Overloaded function result 2: " + fo.add(5.5, 10.5));
+        System.out.println("Overloaded function result 3: " + fo.add(5, 10, 15));
+
+        // constructor function demonstration
+        FunctionOverloading fo1 = new FunctionOverloading();
+        System.out.println("Default constructor values: num1 = " + fo1.num1 + ", num2 = " + fo1.num2 + ", name = " + fo1.name);
+        FunctionOverloading fo2 = new FunctionOverloading(5, 10);
+        System.out.println("Two argument constructor values: num1 = " + fo2.num1 + ", num2 = " + fo2.num2);
+        FunctionOverloading fo3 = new FunctionOverloading(5, 10, "John");
+        System.out.println("Three argument constructor values: num1 = " + fo3.num1 + ", num2 = " + fo3.num2 + ", name = " + fo3.name);
+    }
+}
