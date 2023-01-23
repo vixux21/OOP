@@ -1,0 +1,26 @@
+public class OperatorsExample {
+    public static void main(String[] args) {
+        int num1 = 5;
+        int num2 = 10;
+
+        // Arithmetic operators
+        System.out.println("Addition: " + (num1 + num2));
+        System.out.println("Subtraction: " + (num1 - num2));
+        System.out.println("Multiplication: " + (num1 * num2));
+        System.out.println("Division: " + (num1 / num2));
+        System.out.println("Modulus: " + (num1 % num2));
+
+        // Arithmetic promotion
+        double d1 = 5.2;
+        int i1 = 10;
+        System.out.println("Promotion result: " + (d1 + i1));
+
+        // Method calling
+        OperatorsExample oe = new OperatorsExample();
+        oe.printSum(num1, num2);
+    }
+
+    public void printSum(int a, int b) {
+        System.out.println("Sum: " + (a + b));
+    }
+}
