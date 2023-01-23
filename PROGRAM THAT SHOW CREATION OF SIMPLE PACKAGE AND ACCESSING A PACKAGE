@@ -1,0 +1,18 @@
+// file: MyPackage/MyClass.java
+package MyPackage;
+
+public class MyClass {
+    public void printMessage() {
+        System.out.println("Hello from MyPackage!");
+    }
+}
+
+// file: Main.java
+import MyPackage.MyClass;
+
+public class Main {
+    public static void main(String[] args) {
+        MyClass myObject = new MyClass();
+        myObject.printMessage();
+    }
+}
