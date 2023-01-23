@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    function showMessage() {
+      var name = prompt("Please enter your name:", "John Doe");
+      var message = "Hello, " + name + "! Welcome to the website.";
+      document.getElementById("welcome-message").innerHTML = message;
+    }
+  </script>
+</head>
+<body>
+  <button onclick="showMessage()">Click me</button>
+  <p id="welcome-message"></p>
+</body>
+</html>
