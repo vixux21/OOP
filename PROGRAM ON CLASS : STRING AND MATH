@@ -1,0 +1,19 @@
+public class StringAndMath {
+    public static void main(String[] args) {
+        // String class
+        String str1 = "Hello";
+        String str2 = " World!";
+        String str3 = str1.concat(str2);
+        System.out.println("Concatenation: " + str3);
+        System.out.println("Length: " + str3.length());
+        System.out.println("Substring: " + str3.substring(6));
+
+        // Math class
+        double num1 = 5.2;
+        double num2 = 10.5;
+        System.out.println("Maximum: " + Math.max(num1, num2));
+        System.out.println("Minimum: " + Math.min(num1, num2));
+        System.out.println("Square root: " + Math.sqrt(num1));
+        System.out.println("Power: " + Math.pow(num1, 2));
+    }
+}
